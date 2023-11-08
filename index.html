@@ -202,9 +202,9 @@
 
             var datePre = 'Lugar y Fecha: Buenos Aires, ';
 
-            var bodyFinal1 = 'Por lo expuesto, al día de la fecha no registra deuda alguna con referencia a la gestión.';
-            var bodyFinal2 = 'En consecuencia, manifiesto en el caracter invocado no tener nada mas que reclamar al';
-			var bodyFinal3 = 'mencionado deudor por ningun concepto.';
+            //var bodyFinal1 = 'Por lo expuesto, al día de la fecha no registra deuda alguna con referencia a la gestión.';
+            //var bodyFinal2 = 'En consecuencia, manifiesto en el caracter invocado no tener nada mas que reclamar al';
+			//var bodyFinal3 = 'mencionado deudor por ningun concepto.';
 
 			var date = date;
 			var name = name;
@@ -244,7 +244,7 @@
 			doc.text(4.5, 3.8, datePre + date)
 
 			verticalOffset = 4.2 
-			var loremipsum = 'Por medio de la presente, dejamos constancia que el/la Señor/a '+name+' con documento N°:'+dni+', ha cancelado su obligación de pago derivada del consumo efectuado con los servicios solicitados el día '+dateProcedure+', en: '+clientId+'.'
+			var loremipsum = 'Por medio de la presente, dejamos constancia que el/la Señor/a '+name+' con documento N°:'+dni+', ha cancelado su obligación de pago derivada del consumo efectuado con los servicios solicitados el día '+dateProcedure+', en: '+clientId+'.\n\nPor lo expuesto, al día de la fecha no registra deuda alguna con referencia a la gestión.\n\nEn consecuencia, manifiesto en el caracter invocado no tener nada mas que reclamar al mencionado deudor por ningun concepto.'
 
 			font = [['Helvetica','']]
 			size = 12
@@ -254,9 +254,9 @@
 
 			doc.text(0.6, verticalOffset + size / 72, lines)
 
-			doc.text(0.6, 5.3, bodyFinal1)
-			doc.text(0.6, 5.6, bodyFinal2)
-			doc.text(0.6, 5.8, bodyFinal3)
+			//doc.text(0.6, 5.3, bodyFinal1)
+			//doc.text(0.6, 5.6, bodyFinal2)
+			//doc.text(0.6, 5.8, bodyFinal3)
 
 			verticalOffset += (lines.length + 0.6) * size / 72	
 			
